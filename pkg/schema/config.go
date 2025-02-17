@@ -148,6 +148,9 @@ type ProgramConfig struct {
 	// redirect every request incoming at port 80 to that url.
 	RedirectHttpTo string `json:"redirect-http-to"`
 
+	SinkConfigFile string `json:"sink-config-file"`
+	RecvConfigFile string `json:"recv-config-file"`
+
 	// If overwritten, at least all the options in the defaults below must
 	// be provided! Most options here can be overwritten by the user.
 	UiDefaults map[string]interface{} `json:"ui-defaults"`
